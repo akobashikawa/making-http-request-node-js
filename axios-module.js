@@ -3,7 +3,7 @@ const axios = require("axios");
 const url =
     "https://maps.googleapis.com/maps/api/geocode/json?address=Florence";
 
-const getLocation = async url => {
+const getLocation = async (url) => {
     try {
         const response = await axios.get(url);
         const data = response.data;
