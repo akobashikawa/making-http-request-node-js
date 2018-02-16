@@ -10,6 +10,10 @@ https.get(url, res => {
     });
     res.on("end", () => {
         body = JSON.parse(body);
-        console.log(body);
+        console.log(
+            `City: ${body.results[0].formatted_address} -`,
+            `Latitude: ${body.results[0].geometry.location.lat} -`,
+            `Longitude: ${body.results[0].geometry.location.lng}`
+        );
     })
 });
