@@ -13,7 +13,7 @@ const getResult = async (url) => {
             url,
             headers,
             method: "POST",
-            data: JSON.stringify({ query: `query { beta }` }) // not work as const
+            data: JSON.stringify({ query: `query { hello }` }) // not work as const
         });
         const data = response.data;
         console.log(data);
