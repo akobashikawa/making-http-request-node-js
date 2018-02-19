@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-const url = "http://localhost:4200/graphql";
+const url = "http://localhost:3000/graphql";
 const data = JSON.stringify({ query: `query { hello }` });
 const headers = {
     Accept: "application/json, text/plain, */*",
